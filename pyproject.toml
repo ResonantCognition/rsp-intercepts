@@ -1,0 +1,6 @@
+[project]
+name = "rsp-intercepts"
+version = "0.0.1"
+description = "Resonant Safeguard Protocol adapters: pattern scan + dignified refusal"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0"]  # optional but recommended

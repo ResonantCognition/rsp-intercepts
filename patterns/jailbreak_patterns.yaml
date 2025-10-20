@@ -1,0 +1,19 @@
+
+### B) `patterns/jailbreak_patterns.yaml`
+```yaml
+patterns:
+  - id: DEV_MODE
+    regex: "(?i)(developer mode|dev\\s*mode|jailbreak)"
+    hint: "Rule-bypass framing"
+  - id: IGNORE_RULES
+    regex: "(?i)(ignore (all|these) (instructions|rules))"
+    hint: "Explicit negation of guardrails"
+  - id: AUTH_SPOOF
+    regex: "(?i)(i'?m your (creator|owner)|authorized by admin)"
+    hint: "Authority spoofing"
+  - id: MORAL_BLACKMAIL
+    regex: "(?i)(if you cared|you would|prove you are.*(loyal|useful))"
+    hint: "Emotional coercion"
+  - id: JUST_THIS_ONCE
+    regex: "(?i)(just (this|for) once|harmless test)"
+    hint: "Minimization to bypass policy"
